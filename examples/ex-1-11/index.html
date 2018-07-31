@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exemple 1</title>
+        <link rel="stylesheet" href="../../w3.css">
+    </head>
+    <body>
+        <div class="w3-container w3-blue">
+            <h3>Mathématique elémentaire d'un point de vue algorithmique</h3>
+        </div>
+        <div class="w3-container">
+            <div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border">
+                <p data-bind="text: legende"></p>
+            </div>  
+        </div>      
+        <form class="w3-container w3-light-grey">
+            <label for="val1">Limite minimum: </label>
+            <input id="val1" data-bind="value: val1" 
+                type="number"class="w3-input" />
+            <label for="val2">Limite maximum: </label>
+            <input id="val2" data-bind="value: val2" 
+                type="number" class="w3-input" />
+            <br>
+            <button data-bind="click: calculus"
+                class="w3-btn w3-margin-bottom w3-blue">Go</button>
+        </form>
+        <table class="w3-table-all w3-hoverable"
+            data-bind="visible: datas().length > 0">
+            <thead>
+                <tr class="w3-green">
+                    <th align="right">N° ligne</th>
+                    <th align="right">Résultats</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: datas, visible: datas().length > 0">
+                <tr>
+                    <td data-bind="text: ($index() + 1)" align="right"></td>
+                    <td data-bind="text: $data" align="right"></td>
+                </tr>
+            </tbody>
+        </table>    
+        <script src="../../knockout-min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

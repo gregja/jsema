@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en" data-framework="knockoutjs">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Exemple 1</title>
-        <link rel="stylesheet" href="../w3.css">
+        <link rel="stylesheet" href="../../w3.css">
     </head>
     <body>
         <div class="w3-container w3-blue">
-            <h3>Mathématiques et Algorithmique</h3>
+            <h3>Mathématique elémentaire d'un point de vue algorithmique</h3>
         </div>
         <div class="w3-container">
             <div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border">
@@ -29,18 +29,20 @@
             data-bind="visible: datas().length > 0">
             <thead>
                 <tr class="w3-green">
-                    <th align="right">N° ligne</th>
-                    <th align="right">Résultats</th>
+                    <th align="right">Z</th>
+                    <th align="right">S</th>
+                    <th align="right">M</th>
                 </tr>
             </thead>
             <tbody data-bind="foreach: datas, visible: datas().length > 0">
                 <tr>
-                    <td data-bind="text: ($index() + 1)" align="right"></td>
-                    <td data-bind="text: $data" align="right"></td>
+                    <td data-bind="text: $data.z" align="right"></td>
+                    <td data-bind="text: $data.s" align="right"></td>
+                    <td data-bind="text: $data.m" align="right"></td>
                 </tr>
             </tbody>
         </table>    
-        <script src="../knockout-min.js"></script>
+        <script src="../../knockout-min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
