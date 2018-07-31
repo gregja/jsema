@@ -1,0 +1,20 @@
+{
+  "name": "jsema",
+  "version": "1.0.0",
+  "description": "JS adaptation of the book Elementary Mathematics from an Algorithmic Standpoint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregja/jsema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregja/jsema/issues"
+  },
+  "homepage": "https://github.com/gregja/jsema#readme"
+}
